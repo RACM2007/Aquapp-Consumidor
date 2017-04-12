@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+  <link rel="stylesheet" href="lib/stylerealizarpedido.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <script src="lib/onsen/js/onsenui.js"></script>
+  <script src="lib/onsen/js/angular/angular.js"></script>
+  <script src="lib/onsen/js/angular-onsenui.js"></script>
+  <script type="text/javascript" src="lib/js/jsrealizarpedido.js"></script>
+
+  <script>
+    ons.bootstrap();
+  </script>
+<title>Inicio</title>
+
+<style type="text/css">
+<!--
+.Estilo5 {color: #03A9F4}
+.Estilo6 {color: #03A9F4; font-family: Arial, Helvetica, sans-serif; }
+.Estilo7 {color: #03A9F4; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.Estilo8 {color: #666666}
+.Estilo9 {
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.Estilo10 {font-size: 18px}
+.Estilo11 {font-size: 14px}
+.Estilo12 {color: #03A9F4; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+.Estilo13 {color: #FFFFFF}
+.Estilo14 {font-size: 12px}
+
+-->
+</style>
+</head>
+
+<body>
+<ons-page>
+  <ons-toolbar>
+  <div class="left">
+      <ons-toolbar-button onclick="volverinicio()">
+        <ons-icon icon="ion-android-arrow-back"></ons-icon>  
+      </ons-toolbar-button>
+    </div>
+    <div class="center" >AQUAPP</div>
+  </ons-toolbar>
+
+  <blockquote>
+    <h2 class="Estilo7 Estilo10">Resumen del Pedido</h2>
+    <p class="Estilo6"> <ons-icon icon="ion-android-cart" style="color: #C6C6C6;"></ons-icon><span class="Estilo8">&nbsp;<span class="Estilo11">Producto :</span></span><span class="Estilo11"> Bidon 20 L</span></p>
+    <p class="Estilo12"><ons-icon icon="ion-ios-grid-view" style="color: #C6C6C6;"></ons-icon><span class="Estilo8">&nbsp;Cantidad:</span> 3 u</p>
+    <p class="Estilo12"> <ons-icon icon="ion-ios-pricetag" style="color: #C6C6C6;"><span class="Estilo8">&nbsp;Total:</span> S/. 24.00</p>
+    <p class="Estilo9"><ons-icon icon="ion-ios-location" style="color: #C6C6C6;"> &nbsp; Av. Sanchez Cerro N° 275   </p>
+    <p class="Estilo5">&nbsp;</p>
+  </blockquote>
+  
+  <div class="progress-bar progress-bar--determinate"></div>  
+    <br>
+	
+	<table width="382" border="0">
+      <tr>
+        <td width="78"><img src="lib/images/icon1.PNG" width="78" height="87"></td>
+        <td width="261"> <div class="progress-bar2 progress-bar--determinate" align="center">
+	
+    <div class="progress-bar__primary Estilo13" style="width:40%">Lanzado</div>
+</div></td>
+        <td width="29"><ons-icon icon="md-home" style="color: #9E9E9E;" size="50px"></ons-icon></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><p class="Estilo14">1:22 pm</p>
+        <p class="Estilo14">31/10 </p></td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+	
+	
+	
+
+  
+  
+    <p align="center"><img src="lib/images/imagen1.PNG" width="248" height="108"> </p>
+   
+   <div align="center">
+	  
+	  <button class="fab fab--mini">
+      <ons-icon icon="ion-close-round" style="color: white;"></a> </ons-icon>
+    </button>
+	  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+	<button class="fab fab--mini" disabled>
+        <ons-icon icon="ion-checkmark" style="color: white;"></ons-icon>
+  </button>
+  </div>
+	  
+	  <br>
+	  <br>
+	  <br>
+	        
+</ons-page>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+.Estilo1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  width:300px;
+  background:#0097A4;
+  border:none;
+  border-bottom:1px solid #FFFFFF;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#FFFFFF; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  background:#0097A4;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  background:#0097A4;
+  font-size:14px;
+  color:#FFFFFF;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#FFFFFF; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  background:0097A4;
+  top:5%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#FFFFFF; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#FFFFFF; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#FFFFFF; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+
+#banner {margin-top: 2cm}
+
+.button--material {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 17px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: auto;
+  text-decoration: none;
+  padding: 4px 10px;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: #fff;
+  vertical-align: middle;
+  background-color: rgba(24,103,194,0.81);
+  border: 0px solid currentColor;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  min-height: 36px;
+  line-height: 36px;
+  padding: 0px 16px;
+  -webkit-transition: -webkit-box-shadow 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease;
+  -o-transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  text-align: center;
+  font-size: 14px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  text-transform: uppercase;
+  background-color: #03a9f4;
+  color: #ffffff;
+  font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+}
+.button--material:active {
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.4);
+  background-color: #03a9f4;
+  opacity: 1;
+}
+.button--material:focus {
+  outline: 0;
+}
+.button--material:disabled,
+.button--material[disabled] {
+  opacity: 0.5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.Estilo2 {font-size: xx-large}
+
+.text-input {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: #FFFFFF;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  vertical-align: top;
+  outline: none;
+  line-height: 1;
+  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 17px;
+  border: none;
+  background-color: transparent;
+  letter-spacing: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+ color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 15px;
+  height: 31px;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.text-input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.text-input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.text-input::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.text-input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.text-input:disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+  border: none;
+  background-color: transparent;
+}
+.text-input:disabled::-webkit-input-placeholder {
+  border: none;
+  background-color: transparent;
+  color: #999;
+}
+.text-input:disabled::-moz-placeholder {
+  border: none;
+  background-color: transparent;
+  color: #999;
+}
+.text-input:disabled::-ms-input-placeholder {
+  border: none;
+  background-color: transparent;
+  color: #999;
+}
+.text-input:disabled:-ms-input-placeholder {
+  border: none;
+  background-color: transparent;
+  color: #999;
+}
+.text-input::-ms-clear {
+  display: none;
+}
+.text-input:invalid {
+  border: none;
+  background-color: transparent;
+  color: #1f1f21;
+}
+
+.formarea {
+  width: 90%;
+  margin: 50px auto 0px auto;
+}
+
+.form-row {
+  margin: 4px;
+}
+
+.vspc {
+  margin-top: 20px;
+}
+
+#input_icon { position:relative; padding:0; margin:0; }
+#input { height:20px; margin:0; padding-left: 30px; }
+
+#input_img { position:absolute; bottom:8px; left:10px; width:10px; height:10px; }
+
